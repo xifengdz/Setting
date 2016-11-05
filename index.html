@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户设置</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/switch.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="page-wrap">
+		<div class="mb30 clearfix">
+			<span class="emailAccept mr30">邮件接收：</span>
+			<div class="testswitch">
+			        <input class="testswitch-checkbox" id="onoffswitch" type="checkbox">
+			        <label class="testswitch-label" for="onoffswitch">
+			            <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>
+			            <span class="testswitch-switch"></span>
+			        </label>
+			</div>
+	    </div>
+		<div class="yourEmail mb30">
+			<label for="putEmail" class="yourEmail-cont mr30">您的邮箱：</label>
+			<input type="email" id="putEmail" class="bdr5">
+		</div>
+		<div class="emailTips">
+			<div class="emailTips-cont fl mr30">通知条件：</div>
+			<ul class="emailTips-list">
+				<li>
+					<input type="radio" name="tips" id="allProduct">
+					<label for="allProduct">全部产品</label>
+				</li>
+				<li>
+					<input type="radio" name="tips" id="someProduct">
+					<label for="someProduct">部分产品</label>
+					<select id="yourChoice" class="ml20" style="display: none">
+						<option>acer-v571</option>
+						<option>acer-v572</option>
+						<option>acer-v573</option>
+					</select>
+				</li>
+				<li>
+					<input type="radio" name="tips" id="sometime">
+					<label for="sometime">指定日期</label>
+					<span class="ml20">
+						开始时间：<input type="date" class="bdr5" disabled>
+						结束时间：<input type="date" class="bdr5" disabled>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
